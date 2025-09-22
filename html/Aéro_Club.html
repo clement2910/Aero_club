@@ -9,33 +9,33 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../images/images/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="#baniere"><img src="../images/images/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link text-primary"href="#">Présentation</a>
+                <a class="nav-link text-primary"href="#présentation">Présentation</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-primary" href="#">Nos appareils</a>
+                <a class="nav-link text-primary" href="#nosappareils">Nos appareils</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-primary" href="#">Les moyens pédagogiques</a>
+                <a class="nav-link text-primary" href="#moyens">Les moyens pédagogiques</a>
                 <li class="nav-item">
-                <a class="nav-link text-primary" href="#">Galerie</a>
+                <a class="nav-link text-primary" href="#gallerie">Galerie</a>
                 <li class="nav-item">
-                <a class="nav-link text-primary" href="#">Contact</a>
+                <a class="nav-link text-primary" href="#form">Contact</a>
                 </li>
             </ul>
             </div>
         </div>
         </nav>
 
-    <div id="baniere" class="carousel slide " data-bs-ride="carousel">
+    <section id="baniere" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
             <img src="../images/slide-2.jpg" class="d-block w-100 vh-100" alt="ciel">
@@ -58,8 +58,9 @@
             <span class="visually-hidden">Next</span>
         </button>
         </div>
+    </section>
 
-        <section class="container-fluid bg-dark py-4">
+        <section class="container-fluid bg-dark py-4" id="présentation">
 
             <h1 class="text-primary text-center mb-4">Présentation</h1>
 
@@ -106,7 +107,7 @@
         </section>
 
 
-        <section class="container-fluid py-4">
+        <section class="container-fluid py-4" id="nosappareils">
         
             <h1 class="text-center text-primary">Nos appareils</h1>
 
@@ -197,7 +198,7 @@
         </section>
 
 
-        <section class="container-fluid bg-dark py-4 text-light">
+        <section class="container-fluid bg-dark py-4 text-light" id="moyens">
 
         <h1 class="text-center text-primary mb-4">Moyens Pédagogiques</h1>
 
@@ -231,38 +232,169 @@
         </div>
         </section>
 
-        <h1 class="text-center text-primary mt-4">Notre Gallerie</h1>
-        <h4 class="text-center">Nos membres et avions en pleine action</h4>
+        <section id="gallerie">
+            <h1 class="text-center text-primary mt-4">Notre Gallerie</h1>
+            <h4 class="text-center">Nos membres et avions en pleine action</h4>
 
-        
+            
 
-            <div class="row mt-5">
+                <div class="row mt-5 mb-5">
 
-                <div class="col-md-4 d-flex justify-content-center">
-                    <img src="../images/images/course-12.jpg" alt="jaune" class="img-fluid  rounded-5">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img src="../images/images/course-12.jpg" alt="jaune" class="img-fluid  rounded-5">
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img src="../images/images/course-4.jpg" alt="jaune" class="img-fluid  rounded-5">
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img src="../images/images/course-7.jpg" alt="jaune" class="img-fluid  rounded-5">
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-center mt-4">
+                        <img src="../images/images/cours-5.jpg" alt="jaune" class="img-fluid  rounded-5">
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-center mt-4">
+                        <img src="../images/images/pendulaire.jpg" alt="jaune" class="img-fluid  rounded-5">
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-center mt-4">
+                        <img src="../images/images/Tecnam-P92-exter.jpg" alt="jaune" class="img-fluid  rounded-5">
+                    </div>
+
+                </div>
+            </section>
+
+
+        <section class="container-fluid bg-danger-subtle py-4" id="form">
+
+            <h1 class="text-center">Contactez-nous !</h1>
+            <h4 class="text-center mt-4">
+                <p>Association enregistrée n°04674 -- 
+                <p>Agrément n°AS70986858
+                </p>
+            </h4>
+
+            <div class="row mt-5 mb-5">
+
+                <div class="col-md-6 bg-dark text-light rounded-3 ms-4">
+                    
+                <h6 class="text-center mb-3 p-3">Laissez votre message ici, nous vous contacterons dans la semaine</h6>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom :</label>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse email :</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Objet" class="form-label">Objet :</label>
+                            <input type="text" id="Objet"  class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Demande" class="form-label">Votre Demande :</label>
+                            <input type="text" id="Demande" class="form-control">
+                        </div>
+
+                        <button class="btn btn-primary mb-4">Envoyer</button>
+                        <a href="#" class="btn btn-success mb-4">Lien cliquable</a>
+
+                    </form>
                 </div>
 
-                <div class="col-md-4 d-flex justify-content-center">
-                    <img src="../images/images/course-4.jpg" alt="jaune" class="img-fluid  rounded-5">
-                </div>
+                <div class="col-md-5 ">
+                    <h2 class="text-center">Nos Coordonnées</h2>
+                            <div class="container text-center my-5">
+                            <div class="row justify-content-center g-4">
 
-                <div class="col-md-4 d-flex justify-content-center">
-                    <img src="../images/images/course-7.jpg" alt="jaune" class="img-fluid  rounded-5">
-                </div>
+                            <!-- Email -->
+                            <div class="col-4">
+                                <div class="rounded-circle bg-info d-flex justify-content-center align-items-center mx-auto" style="width: 70px; height: 70px;">
+                                    <img src="../images/envelope.svg" alt="Email" style="width:40px; height:40px;">
+                            </div>
+                                <p class="mt-2">acf2l@gmail.com</p>
+                            </div>
 
-                <div class="col-md-4 d-flex justify-content-center mt-4">
-                    <img src="../images/images/cours-5.jpg" alt="jaune" class="img-fluid  rounded-5">
-                </div>
+                            <!-- Adresse -->
+                            <div class="col-4">
+                                <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center mx-auto" style="width: 70px; height: 70px;">
+                                    <img src="../images/geo-alt.svg" alt="Adresse" style="width:40px; height:40px;">
+                            </div>
+                                <p class="mt-2">62, Avenue de la République, 70200 Lure</p>
+                            </div>
 
-                <div class="col-md-4 d-flex justify-content-center mt-4">
-                    <img src="../images/images/pendulaire.jpg" alt="jaune" class="img-fluid  rounded-5">
-                </div>
+                            <!-- Téléphone -->
+                            <div class="col-4">
+                                <div class="rounded-circle bg-success d-flex justify-content-center align-items-center mx-auto" style="width: 70px; height: 70px;">
+                                    <img src="../images/telephone.svg" alt="Téléphone" style="width:40px; height:40px;">
+                            </div>
+                                <p class="mt-2">+33 01 60 56 60 60</p>
+                            </div>
 
-                <div class="col-md-4 d-flex justify-content-center mt-4">
-                    <img src="../images/images/Tecnam-P92-exter.jpg" alt="jaune" class="img-fluid  rounded-5">
+                            </div>
+                            </div>
+
+                        <h2 class="text-center">Nos réseaux</h2>
+
+                            <div class="container text-center my-5">
+                            <div class="row justify-content-center g-4">
+
+                            <!-- Facebook -->
+                            <div class="col-4">
+                                <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center mx-auto" style="width: 70px; height: 70px;">
+                                    <img src="../images/facebook.svg" alt="Facebook" style="width:40px; height:40px;">
+                            </div>
+                            </div>
+
+                            <!-- Twitter -->
+                            <div class="col-4">
+                                <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center mx-auto" style="width: 70px; height: 70px;">
+                                    <img src="../images/twitter.svg" alt="Twitter" style="width:40px; height:40px;">
+                            </div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="col-4">
+                                <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center mx-auto" style="width: 70px; height: 70px;">
+                                    <img src="../images/linkedin.svg" alt="LinkedIn" style="width:40px; height:40px;">
+                            </div>
+                            </div>
+
+                            <!-- Instagram -->
+                            <div class="col-4">
+                                <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center mx-auto" style="width: 70px; height: 70px;">
+                                    <img src="../images/instagram.svg" alt="Instagram" style="width:40px; height:40px;">
+                            </div>
+                            </div>
+
+                            </div>
+                            </div>
                 </div>
 
             </div>
+          
+
+        <div class="text-center">
+            Aéro-Club de Frotey-Les-Lure
+            <br>
+            Copyright © Untitled. All rights reserved. Design By Awaiken Theme Images Unsplash, Pixabay, Freepik, Icon Flaticon
+        </div>
+        </section> 
+
+
+
+
+
+
+
+        </section>
 
     </body>
 </html>
